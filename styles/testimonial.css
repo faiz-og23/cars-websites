@@ -1,0 +1,87 @@
+.testimonial-section-container{
+    background-color: #fff;
+    padding: 4rem 1rem;
+}
+
+.testimonial-section-container h1{
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "Libre Franklin", sans-serif;
+    margin-bottom: 1rem;
+    color: #3d4037;
+    text-align: center;
+}
+
+.testimonial-section-container p{
+    font-weight: 500;
+    font-size: 1rem;
+     font-family: "Libre Franklin", sans-serif;
+     color: #3d4037;
+     margin-bottom: 2rem;
+     text-align: center;
+}
+
+.testimonial-card img{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.testimonial-card p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #3d4037;
+    font-family: "Libre Franklin", sans-serif;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.testimonial-card h4{
+    font-size: 1.2rem;
+    font-family: "Libre Franklin", sans-serif;
+    color: #3d4037;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.testimonial-icon-container .star-icon{
+    color: #d1b601;
+} 
+
+.testimonial-icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-card{
+    border: 1.5px solid #d1b601;
+    padding-bottom: 3rem;
+    border-radius: 8px;
+}
+
+.testimonial-card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+@media screen and (min-width: 600px){
+    .testimonial-section-container{
+        padding: 4rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .testimonial-card-container{
+        flex-direction: row;
+    }
+
+    .testimonial-section-container{
+        padding: 5rem 7.5rem;
+    }
+
+    .testimonial-section-container p{
+        padding: 0 1rem;
+    }
+}

@@ -1,0 +1,121 @@
+.hero-container{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 80vh;
+}
+
+.hero-container::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.2));
+    pointer-events: none;
+}
+
+.hero-slider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex: 0 0 33.333%;
+}
+
+.hero-slider{
+    display: flex;
+    width: 300%;
+    height: 100%;
+    overflow-x: auto;
+    animation: slideShow 15s infinite ease-in-out;
+}
+
+.hero-slider::-webkit-scrollbar{
+    display: none;
+}
+
+.hero-text-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text-container h1{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.hero-text-container p{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2rem ;
+    margin-bottom: 2rem;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+}
+
+.hero-text-container button{
+    background-color: #d8ac07;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.6rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #d8ac07;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.hero-text-container button:hover{
+    background-color: #aeba3c;
+    border: 1px solid #aeba3c;
+}
+
+@media screen and (min-width: 1200px) {
+    .hero-container{
+        height: 120vh
+    }
+}
+
+
+    
+
+
+@keyframes slideShow{
+    /* slide animation for image 1 */
+    0%, 28%{
+        transform: translateX(0%);
+    }
+
+    /* slide animation for image 2 */
+    33%, 61%{
+        transform: translateX(-33.333%);
+    }
+
+     /* slide animation for image 3*/
+    66%, 94%{
+        transform: translateX(-66.666%);
+    }
+
+     /* slide animation to jump back to the starting point */
+    100%{
+        transform: translateX(0%);
+    }
+}

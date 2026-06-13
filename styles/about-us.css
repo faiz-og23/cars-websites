@@ -1,0 +1,43 @@
+.about-us-text h1{
+   color: #d8ac07;
+   font-weight: 600;
+   text-decoration: underline;
+   font-size: 2rem;
+   margin-bottom: 1rem;
+   font-family: "Libre Franklin", sans-serif;
+   text-align: center;
+}
+
+.about-us-text p{
+    color:#3d4037;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Libre Franklin", sans-serif;
+    line-height: 1.5srem;
+    text-align: left;
+}
+
+.about-us-image img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.about-us-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 3.5rem 1rem;
+}
+
+@media screen and (min-width: 992px) {
+    .about-us-text h1{
+        font-size: 2.5rem;
+    }
+
+    .about-us-container{
+        flex-direction: row;
+        gap: 3rem;
+        align-items: center;
+        padding: 5rem 5rem;
+    }
+}
