@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./styles/about-us.css">
     <link rel="stylesheet" href="./styles/services.css">
     <link rel="stylesheet" href="./styles/testimonial.css">
+    <link rel="stylesheet" href="./styles/contact.css">
 </head>
 <body>
     <!-- NavBar  -->
@@ -165,63 +166,42 @@
           <h1>Contact</h1>
          <div class="contact-container">
            <div class="contact-details">
-             <div class="location">
-               <img src="./images/icons/contact/hanging-key_70025.png" alt="Location">
-               <p> Automobili Lamborghini S.p.A., Via Modena 12, 40019 Sant'Agata Bolognese (BO), Italy.</p>
+             <div class="contact-icons">
+               <img src="./images/icons/contact/location_2430430.png" alt="Location">
+               <p class="address"> Automobili Lamborghini S.p.A., Via Modena 12, 40019 Sant'Agata Bolognese (BO), Italy.</p>
              </div>
 
-             <div class="phone">
+             <div class="contact-icons">
                <img src="./images/icons/contact/phone-call_3059446.png" alt="Phone">
                <p>+39 051-6817711ss</p>
              </div>
 
-             <div class="email">
+             <div class="contact-icons">
               <img src="./images/icons/contact/new-email-interface-symbol-black-closed-envelope_46951.png" alt="Email">
               <p>CustomerCareAmerica@lamborghini.com</p>
              </div>
-           </div>
+             </div>
              
           <div class="contact-form">
             <form action="">
               <h4>Fill in your contact details below</h4>
 
-              <form action="/action_page.php">
-  <label for="">First name:</label>
-  <input type="text" id="name" name="name"><br><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="name" name="name"><br><br>
-  <input type="submit" value="Submit">
-</form>
+              <div class="label-input-container">
+                <label for="name"> Name </label>
+                <input type="text" id="name" name="name" placeholder="Please enter name here">
+              </div>
 
-<p>Click the "Submit" button and the form-data will be sent to a page on the 
-server called "action_page.php".</p>
-
-<label for="email">Enter your email:</label>
-<input type="email" id="email" name="email">
-
-<label for="user-password">Password:</label>
-<input type="password" id="user-password" name="password" required>
-
-<input type="checkbox" id="subscribe" name="subscribe" value="newsletter">
-<label for="subscribe">Subscribe to this page</label>
-
-<form>
-  <p>Select your favorite car:</p>
-  
-  <input type="radio" id="car" name="car" value="car">
-  <label for="car">Lamborghini Urus, Lamborghini Aventador</label><br>
-
-  <label for="start">Start date:</label>
-
-<input type="date" id="start" name="trip-start"
-       value="2026-05-15"
-       min="2026-01-01" max="2026-12-31">
-
- label for="file-upload">Choose a profile picture:</label>
-<input type="file" id="file-upload" name="file-upload" accept="image/*">      
+              <div class="label-input-container">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Please enter message here"></textarea>
+              </div>
+              
+             <button type="submit" class="submit-btn">Submit</button>
+           </form>
           </div>
          </div>
          </section>
+
      <script>
       feather.replace();
     </script>

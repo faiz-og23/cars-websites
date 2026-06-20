@@ -1,0 +1,105 @@
+#contact{
+    padding: 3.5rem 1rem;
+}
+
+.contact-container{
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-family: "Libre Franklin" , sans-serif;
+}
+
+.contact-icons img{
+    width: 15%;
+    padding: 0.5rem;
+    background-color: #d1b601;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.contact-icons p{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Libre Franklin" , sans-serif;
+    margin-bottom: 1rem;
+}
+ 
+.contact-icons{
+    margin-bottom: 2.5rem;
+}
+
+.contact-form h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Libre Franklin" , sans-serif;
+    margin-bottom: 1rem;
+}
+
+.contact-form label{
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: "Libre Franklin" , sans-serif;
+}
+
+.contact-form input{
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid grey;
+    margin-top: 1rem;
+}
+
+.contact-form textarea{
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid grey;
+    /* resize: vertical; */
+    resize: none;
+    height: 10rem;
+    margin-top: 1rem;
+}
+
+.label-input-container{
+    margin-bottom: 2.5rem;
+}
+
+.submit-btn{
+    width: 100%;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    background-color: #d1b601;
+    border: 1px solid #d1b601;
+    font-size: 1rem;
+    font-family: "Libre Franklin" , sans-serif;
+    font-weight: 500;
+    color: #fff;
+}
+
+@media screen and (min-width: 992px) {
+    #contact h1{
+        margin-bottom: 3.5rem;
+    }
+     
+    .contact-icons img{
+        width: 12%;
+        
+    }
+
+    .contact-container{
+        flex-direction: row;
+        gap: 5rem;
+    }
+
+    .address{
+        max-width: 20rem;
+    }
+}
