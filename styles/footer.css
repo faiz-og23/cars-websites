@@ -1,0 +1,164 @@
+footer{
+    background-color:rgb(77, 75, 75);
+    padding: 3rem 1rem;
+}
+
+.logo-container img{
+    width:20%;
+    margin-bottom: 1rem;
+}
+
+.logo-container p{
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: "Libre Franklin" , sans-serif;
+    border-bottom: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.footer-text{
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Libre Franklin" , sans-serif;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.footer-form label{
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: "Libre Franklin" sans-serif ;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+
+.footer-form input {
+     padding: 0.5rem 1rem;
+     width: 100%;
+     border-radius: 6px;
+     outline: none;
+     border: 1px solid grey;
+     margin-top: 1rem;
+     margin-bottom: 1.5rem;
+     display: block;
+}
+
+.footer-form .form-btn {
+     width: 100%;
+     border-radius: 10px;
+     padding: 0.5rem 1rem;
+     background-color: #d1b601;
+     border: 1px solid #d1b601;
+     font-size: 1rem;
+     font-family: "Libre Franklin" , sans-serif;
+     font-weight: 500;
+     color: #fff;
+     margin-bottom: 1rem;
+} 
+
+.social-icons{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2.5rem;
+    color: #fff;   
+}
+
+.icon{
+    background-color: #d1b601;
+    border-radius: 0.5rem;
+    color:#fff;
+    padding: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+
+.footer-details{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Libre Franklin" , sans-serif;
+    margin-bottom: 2.5rem;
+    color: #fff;
+}
+
+.copyright-details p{
+      font-size: 1rem;
+      font-weight: 500;
+      font-family: "Libre Franklin" , sans-serif;  
+      color: #fff;
+}
+
+.privacy-terms p{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Libre Franklin" , sans-serif;
+    color: #fff;
+}
+
+.footer-form{
+    margin-bottom: 1rem;
+}
+
+hr{
+    margin-bottom: 1rem;
+}
+
+.copyright{
+    margin-bottom: 1rem;
+}
+
+.privacy-terms p:not(:last-child){
+    margin-bottom: 1rem;
+}
+
+.footer-details
+h4, p{
+   margin-bottom: 1rem;
+}
+
+@media screen and (min-width:992px) {
+    footer{
+        padding: 4rem 7.5rem;
+    }
+    
+    .logo-container img{
+        width: 10%;
+    }
+    
+     .footer-container{
+         display: flex;
+         gap: 1rem;  
+     }
+
+     .footer-details{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+     }
+
+     .footer-form input{
+        width: 50%;
+     }
+
+     .footer-form .form-btn{
+        width: 50%;
+     }
+
+     .copyright-details{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     }
+
+     .privacy-terms{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+     }
+
+     hr{
+       margin-bottom: 2rem;
+     }
+}
