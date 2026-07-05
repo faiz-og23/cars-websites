@@ -130,12 +130,14 @@ h4, p{
     
      .footer-container{
          display: flex;
-         gap: 1rem;  
+         gap: 1rem; 
+         align-items: center; 
      }
 
      .footer-details{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        gap: 2.5rem;
      }
 
      .footer-form input{
@@ -160,5 +162,9 @@ h4, p{
 
      hr{
        margin-bottom: 2rem;
+     }
+
+     .footer-details .news-media{
+        min-width: 7.5rem;
      }
 }

@@ -34,13 +34,13 @@
       </div>
        
       <!-- Mobile Menu Container -->
-      <div class="menu-bar">
-        <i data-feather="menu"></i>
+      <div class="menu-icon">
+        <i data-feather="menu" onclick="showOverlay()"></i>
       </div>
 
       <!-- Close Icon Container -->
       <div class="close-icon">
-        <i data-feather="x"></i>
+        <i data-feather="x" onclick="hideOverlay()"></i>
       </div>
     </header>
 
@@ -236,7 +236,7 @@
                 <p>Revuelto</p>
                 <p>Temerario</p>
                 <p>Urus SE</p>
-                <p>Concept Cars</p>
+                <p class="news-media">Concept Cars</p>
               </div>
 
               <div class="">
@@ -252,15 +252,15 @@
                 <p>Accademia</p>
                 <p>Esperienza</p>
                 <p>Lounge</p>
-                <p>World Transformed</p>
+                <p class="news-media">World Transformed</p>
               </div>
 
               <div class="">
-                <h4>News & Media</h4>
-                <p>Press Release</p>
-                <p>Lamborghini Magazine</p>
-                <p>Podcast</p>
-                <p>Media Center</p>
+                <h4 class="news-media">News & Media</h4>
+                <p class="news-media">Press Release</p>
+                <p class="news-media">Lamborghini Magazine</p>
+                <p class="news-media">Podcast</p>
+                <p class="news-media">Media Center</p>
               </div>
               </div>
             </div>
@@ -276,8 +276,6 @@
               </div>
             </div>
           </footer>
-     <script>
-      feather.replace();
-    </script>
+    <script src="./index.js"></script>
 </body>
 </html>

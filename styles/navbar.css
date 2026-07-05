@@ -5,7 +5,7 @@ header{
     padding: 1.5rem;
     position: sticky;
     top: 0;
-    z-index: 100000;
+    z-index: 10000;
     background-color: #fff;
 }
 
@@ -16,9 +16,9 @@ header{
 .menu-items{
     font-size: 1rem;
     font-weight: 600;
-    color: #4a464e;
+    color: #fff;
     cursor: pointer;
-    font-family: "Playfair Display", serif;
+    font-family: "Playfair Display", sans-serif;
     transition: all 0.3s ease;
 }
 
@@ -27,10 +27,11 @@ header{
 }
 
 .nav-btn{
-    padding: 1rem 2.5rem;
+    padding: 0.6rem 1.5rem;
     border: 1px solid #d8ac07;
+    background-color: #d8ac07;
     border-radius: 0.5rem;
-    color: #d8ac07;
+    color: #fff;
     font-weight: 600;
     font-size: 1rem;
     font-family: "Playfair Display", serif;
@@ -54,20 +55,47 @@ header{
 }
 
 #overlay-nav li{
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 #overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000e6;
     display: none;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+#overlay.active-overlay{
+    display: flex;
 }
   
-.menu-bar{
+.menu-icon{
     display: block;
     cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-icon.hidden-on-mobile{
+    display: none;
 }
 
 .close-icon{
+    position: absolute;
+    top: 1.875rem;
+    right: 1.875rem;
+    color: #fff;
     display: none;
+    z-index: 1001;
+}
+
+.close-icon.shown-on-mobile{
+    display: block;
 }
 
 @media screen and (min-width: 992px) {
@@ -75,9 +103,18 @@ header{
         padding: 2rem 5rem;
     }
 
-    .menu-bar,
+    .menu-items{
+        font-size: 1.875rem;
+    }
+
+    .menu-icon,
     .close-icon{
-        display: none;
+        display: none !important;
+    }
+
+    .menu-icon.menu-icon.hidden-on-mobile, 
+    .close-icon.close-icon.shown-on-mobile{
+        display: none !important;
     }
     
     .logo img{
@@ -85,8 +122,15 @@ header{
     }
 
     #overlay{
+        position: static;
+        width: auto;
+        height: auto;
+        background-color: transparent;
         display: flex !important;
-
+        justify-content: flex-end;
+        margin-left: auto;
+        animation: none !important;
+        transition: none !important;
     }
 
     #overlay-nav ul{
@@ -98,4 +142,38 @@ header{
         margin-bottom: 0;
     }
 
+}
+
+/* Animation for overlay sliding from right */
+.slide-from-right {
+  animation-name: slideFromRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Animation for overlay sliding to right */
+.slide-to-right {
+  animation-name: slideToRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes slideToRight {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
 }
