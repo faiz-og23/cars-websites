@@ -117,8 +117,7 @@ footer{
 }
 
 hr{
-    margin-bottom: 1rem;
-    margin-top: 2rem;
+    margin: 2rem 0rem;
 }
 
 .copyright{
@@ -172,11 +171,6 @@ h4, p{
         display: flex;
         gap: 1rem;
         align-items: center;
-     }
-
-     hr{
-       margin-bottom: 2rem;
-       margin-top: 0;
      }
 
      .footer-details .news-media{
